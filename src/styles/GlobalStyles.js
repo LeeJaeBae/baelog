@@ -7,8 +7,10 @@ const globalStyles = createGlobalStyle`
     ${reset};
 
     @import url("https://fonts.googleapis.com/earlyaccess/notosanskr.css");
-    @import url('https://cdn.jsdelivr.net/gh/velopert/font-d2coding@1.2.1/d2coding.css');
-
+    /* font-family: 'Fredericka the Great', cursive; en*/
+    /* font-family: 'Open Sans Condensed', sans-serif; en*/
+    /* font-family: 'Nanum Gothic', sans-serif; ko */
+    /* font-family: 'Nanum Myeongjo', serif; ko*/
     a{
         text-decoration: none;
         color: inherit;
@@ -19,12 +21,23 @@ const globalStyles = createGlobalStyle`
     body{
         margin: 0;
         box-sizing: border-box;
-        font-family: "Noto Sans KR", sans-serif;
+        font-family: 'Nanum Myeongjo', sans-serif;;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        background-color: rgba(20,20,20,1);
-        color: ${colors.blue[1]};
+        background-color: ${colors.gray[2]};
+        color: ${colors.black};
     }
 `;
+
+export const headColor = colors.gray[3];
+export const bodyColor = colors.gray[2];
+export const footerColor = colors.gray[6];
+export const logoColor = colors.gray[9];
+export const textColor = {
+  default: colors.gray[7],
+  hover: colors.gray[6],
+  title: colors.gray[8]
+};
+export const logoText = "DAILY DAIRY"; // 수정가능한 사항이니 리덕스에 올려야할듯
 
 export default globalStyles;

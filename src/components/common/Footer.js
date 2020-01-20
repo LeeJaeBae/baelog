@@ -3,9 +3,11 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 import { colors, breakpoints } from "styles/lib";
+import { footerColor } from "styles/GlobalStyles";
+import { logoColor, logoText } from "../../styles/GlobalStyles";
 
 const Container = styled.div`
-  background-color: ${colors.gray[7]};
+  background-color: ${footerColor};
   height: 7rem;
   width: 100%;
 
@@ -13,6 +15,8 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  font-family: "Fredericka the Great", cursive;
 
   user-select: none;
   @media (max-width: ${breakpoints.medium}) {
@@ -23,7 +27,7 @@ const Container = styled.div`
 `;
 
 const Brand = styled(Link)`
-  color: ${colors.yellow[7]};
+  color: ${logoColor};
   font-size: 2rem;
   font-weight: 600;
 `;
@@ -32,10 +36,10 @@ const Login = styled.div`
   margin-top: 0.5rem;
   font-weight: 600;
   font-size: 0.8rem;
-  color: ${colors.yellow[4]};
+  color: ${logoColor};
   cursor: pointer;
   &:hover {
-    color: ${colors.yellow[2]};
+    color: ${colors.orange[4]};
   }
 `;
 
@@ -43,7 +47,7 @@ const Footer = () => {
   console.log(window);
   return (
     <Container>
-      <Brand to="/">BAELOG</Brand>
+      <Brand to="/">{logoText}</Brand>
       <Login>Log in</Login>
     </Container>
   );

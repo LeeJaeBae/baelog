@@ -12,7 +12,7 @@ const Container = styled.div`
   padding-bottom: 0.25rem;
   font-weight: 600;
   font-size: 0.9rem;
-  color: white;
+  color: gray;
   cursor: pointer;
   display: inline-flex;
 
@@ -20,20 +20,24 @@ const Container = styled.div`
    ${props =>
      props.theme === "default"
        ? `{
-    background: ${colors.yellow[7]};
+    background: ${colors.black};
+    color: ${colors.gray[0]};
     &:hover {
-      background: ${colors.yellow[5]};
+      background: ${colors.orange[4]};
+      color: black;
     }
     &:active {
       background: ${colors.yellow[7]};
     }
   }`
        : ``}
+
   /* gray */
   ${props =>
     props.theme === "gray"
       ? `{
     background: ${colors.gray[7]};
+    color: ${colors.gray[0]};
     &:hover {
       background: ${colors.gray[5]};
     }
@@ -46,15 +50,16 @@ const Container = styled.div`
   ${props =>
     props.theme === "outline"
       ? ` {
-    border: 2px solid white;
+    border: 2px solid gray;
     border-radius: 2px;
     &:hover {
       background: ${colors.gray[7]};
       color: ${colors.yellow[7]};
+      border: 2px solid black;
     }
     &:active {
       background: ${colors.gray[10]};
-      border: 2px solid ${colors.gray[10]};
+      border: 2px solid black;
     }
   }`
       : ``}

@@ -1,11 +1,14 @@
 import React from "react";
 import PageTemplate from "components/common/PageTemplate";
-import { ListWrapper } from "../components/List";
+import { ListWrapper, PostList, Pagination } from "../components/list";
 
 const ListPage = () => {
   return (
     <PageTemplate>
-      <ListWrapper>test</ListWrapper>
+      <ListWrapper>
+        <PostList />
+        <Pagination />
+      </ListWrapper>
     </PageTemplate>
   );
 };

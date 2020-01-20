@@ -3,11 +3,13 @@ import { Link } from "react-router-dom";
 
 import styled from "styled-components";
 import { colors, breakpoints } from "styles/lib";
+import { headColor } from "styles/GlobalStyles";
 
 import Button from "./Button";
+import { logoText } from "../../styles/GlobalStyles";
 
 const Head = styled.header`
-  background-color: ${colors.gray[10]};
+  background-color: ${headColor};
   user-select: none;
 `;
 
@@ -19,7 +21,7 @@ const Content = styled(Head)`
   display: flex;
   margin: 0 auto;
   justify-content: center;
-  color: ${colors.yellow[7]};
+  color: ${colors.gray[8]};
   @media (max-width: ${breakpoints.small}) {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -38,8 +40,10 @@ const Content = styled(Head)`
 
 const Brand = styled.div`
   position: relative;
-  top: calc(50% - 0.75rem);
-  font-size: 1.5rem;
+  top: calc(50% - 1.5rem);
+  font-family: "Fredericka the Great", "Nanum Gothic", cursive;
+  /* font-family: 'Nanum Gothic', sans-serif; */
+  font-size: 3rem;
   font-weight: 600;
 `;
 
@@ -58,7 +62,7 @@ const Header = () => {
       <Head>
         <Content as="div">
           <Brand>
-            <Link to="/">BAELOG</Link>
+            <Link to="/">{logoText}</Link>
           </Brand>
           <Right>
             <Button theme="outline" to="/editor">

@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
+import React from "./node_modules/react";
+import styled from "./node_modules/styled-components";
 
-import { breakpoints } from "styles/lib";
+import { breakpoints } from "./node_modules/styles/lib";
 
 const Wrapper = styled.div`
   width: 1024px;
