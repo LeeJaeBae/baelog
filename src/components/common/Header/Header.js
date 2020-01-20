@@ -44,6 +44,9 @@ const Right = styled.div`
   top: calc(50% - 0.75rem);
   right: 0;
   margin-left: auto;
+  @media (max-width: 400px) {
+    display: none;
+  }
 `;
 
 const Header = () => {
@@ -58,6 +61,11 @@ const Header = () => {
             <Button theme="outline" to="/editor">
               New Post
             </Button>
+            <Button theme="disabled" disabled={true}>
+              test
+            </Button>
+            <Button theme="default">test2</Button>
+            <Button theme="gray">test3</Button>
           </Right>
         </Content>
       </Head>

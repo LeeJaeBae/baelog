@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
-import { colors } from "styles/lib";
+import { colors, mixins } from "styles/lib";
 
 const Container = styled.div`
   padding-left: 0.5rem;
@@ -17,7 +17,9 @@ const Container = styled.div`
   display: inline-flex;
 
   /* default */
-  &.default {
+   ${props =>
+     props.theme === "default"
+       ? `{
     background: ${colors.yellow[7]};
     &:hover {
       background: ${colors.yellow[5]};
@@ -25,9 +27,12 @@ const Container = styled.div`
     &:active {
       background: ${colors.yellow[7]};
     }
-  }
+  }`
+       : ``}
   /* gray */
-  &.gray {
+  ${props =>
+    props.theme === "gray"
+      ? `{
     background: ${colors.gray[7]};
     &:hover {
       background: ${colors.gray[5]};
@@ -35,7 +40,8 @@ const Container = styled.div`
     &:active {
       background: ${colors.gray[7]};
     }
-  }
+  }`
+      : ``}
   /* white outline */
   ${props =>
     props.theme === "outline"
@@ -54,11 +60,13 @@ const Container = styled.div`
       : ``}
 
   &:hover {
-    opacity: 0.7;
+    ${mixins(2, 0.5)}
   }
 
   /* disabled */
-  &.disabled {
+   ${props =>
+     props.theme === "disabled"
+       ? `{
     background: ${colors.gray[4]};
     color: ${colors.gray[6]};
     cursor: default;
@@ -67,7 +75,8 @@ const Container = styled.div`
       box-shadow: none;
       background: ${colors.gray[4]};
     }
-  }
+  }`
+       : ``}
 
   & + & {
     margin-left: 0.5rem;
