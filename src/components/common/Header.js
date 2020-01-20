@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import styled from "styled-components";
 import { colors, breakpoints } from "styles/lib";
-import { headColor } from "../Post/info/node_modules/styles/GlobalStyles";
+import { headColor } from "styles/GlobalStyles";
 
 import Button from "./Button";
 import { logoText } from "../../styles/GlobalStyles";

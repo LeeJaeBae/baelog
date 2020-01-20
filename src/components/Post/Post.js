@@ -1,14 +1,9 @@
-import React from "./node_modules/react";
+import React from "react";
 // import Body from "./body";
-import Info from "./info";
-import PageTemplate from "/components/common";
+import Info from "./Info";
 
 const Post = () => {
-  return (
-    <PageTemplate>
-      <Info />
-    </PageTemplate>
-  );
+  return <Info />;
 };
 
 export default Post;

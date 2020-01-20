@@ -1,6 +1,6 @@
-import React from "./node_modules/react";
-import styled from "./node_modules/styled-components";
-import { headColor } from "./node_modules/styles/GlobalStyles";
+import React from "react";
+import styled from "styled-components";
+import { headColor } from "styles/GlobalStyles";
 
 const PostInfo = styled.div`
   background-color: ${headColor};
