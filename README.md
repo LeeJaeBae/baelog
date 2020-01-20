@@ -20,3 +20,9 @@
 ## Header, Footer, button design
 
     신문같은 디자인을 가진 일기 앱 -Diary paper
+
+## Page List done!
+
+## PostDetail
+
+사이즈 조절해야함

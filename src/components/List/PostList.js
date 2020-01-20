@@ -1,9 +1,9 @@
-import React from "./node_modules/react";
-import styled from "./node_modules/styled-components";
-import { Link } from "./node_modules/react-router-dom";
+import React from "react";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-import { textColor } from "./node_modules/styles/GlobalStyles";
-import { colors } from "./node_modules/styles/lib";
+import { textColor } from "styles/GlobalStyles";
+import { colors } from "styles/lib";
 
 const List = styled.div``;
 

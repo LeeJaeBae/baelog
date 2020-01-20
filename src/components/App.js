@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import { ListPage, EditorPage, NotFoundPage, PostPage } from "pages";
+import { ListPage, EditorPage, NotFoundPage, PostPage } from "Route";
 
 function App() {
   return (

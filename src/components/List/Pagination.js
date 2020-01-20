@@ -1,8 +1,8 @@
-import React from "./node_modules/react";
-import styled from "./node_modules/styled-components";
+import React from "react";
+import styled from "styled-components";
 
-import Button from "./node_modules/components/common/Button";
-import { colors } from "./node_modules/styles/lib";
+import Button from "components/common/Button";
+import { colors } from "styles/lib";
 
 const Container = styled.div`
   margin-top: 2rem;
