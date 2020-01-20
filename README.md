@@ -14,3 +14,7 @@
     - react-redux
     - redux-pender
     - immutable
+    - styled-components
+        -styled-reset
+
+## Header, Footer, button design

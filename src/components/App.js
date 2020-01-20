@@ -1,12 +1,10 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import { ListPage, EditorPage, NotFoundPage, PostPage } from "pages";
-import Header from "components/common/Header/Header";
 
 function App() {
   return (
     <>
-      <Header />
       <Switch>
         <Route exact path="/" component={ListPage} />
         <Route path="/page/:page" component={ListPage} />
