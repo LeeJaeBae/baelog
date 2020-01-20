@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 import { colors, breakpoints } from "styles/lib";
-import { footerColor } from "styles/GlobalStyles";
+import { footerColor } from "../Post/info/node_modules/styles/GlobalStyles";
 import { logoColor, logoText } from "../../styles/GlobalStyles";
 
 const Container = styled.div`

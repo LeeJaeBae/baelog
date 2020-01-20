@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Header from "./Header";
 import Footer from "./Footer";
 import { breakpoints } from "styles/lib";
-import { bodyColor } from "styles/GlobalStyles";
+import { bodyColor } from "../Post/info/node_modules/styles/GlobalStyles";
 
 const Main = styled.main`
   background: ${bodyColor};
