@@ -2,11 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-import { colors } from "styles/lib";
+import { colors, breakpoints } from "styles/lib";
 
 const Container = styled.div`
   background-color: ${colors.gray[7]};
-  height: 10rem;
+  height: 7rem;
   width: 100%;
 
   display: flex;
@@ -15,6 +15,11 @@ const Container = styled.div`
   flex-direction: column;
 
   user-select: none;
+  @media (max-width: ${breakpoints.medium}) {
+    height: 4rem;
+    position: relative;
+    bottom: 0;
+  }
 `;
 
 const Brand = styled(Link)`

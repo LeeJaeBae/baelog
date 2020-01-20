@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { colors, breakpoints } from "styles/lib";
 
-import Button from "../Button/Button";
+import Button from "./Button";
 
 const Head = styled.header`
   background-color: ${colors.gray[10]};
@@ -20,15 +20,19 @@ const Content = styled(Head)`
   margin: 0 auto;
   justify-content: center;
   color: ${colors.yellow[7]};
-  @media (min-width: ${breakpoints.small}) {
+  @media (max-width: ${breakpoints.small}) {
     padding-left: 1rem;
     padding-right: 1rem;
     width: auto;
   }
-  @media (min-width: ${breakpoints.medium}) {
+  @media (max-width: ${breakpoints.medium}) {
     width: 100%;
+    height: 5rem;
+    display: block;
+    text-align: center;
   }
-  @media (min-width: ${breakpoints.wide}) {
+  @media (max-width: ${breakpoints.wide}) {
+    width: auto;
   }
 `;
 
@@ -42,10 +46,9 @@ const Brand = styled.div`
 const Right = styled.div`
   position: relative;
   top: calc(50% - 0.75rem);
-  right: 0;
   margin-left: auto;
-  @media (max-width: 400px) {
-    display: none;
+  @media (max-width: ${breakpoints.medium}) {
+    margin-left: 0;
   }
 `;
 

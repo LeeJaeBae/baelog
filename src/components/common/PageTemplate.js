@@ -1,13 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 
-import Header from "components/common/Header/Header";
-import Footer from "components/common/Footer/Footer";
-import { colors } from "styles/lib";
+import Header from "./Header";
+import Footer from "./Footer";
+import { colors, breakpoints } from "styles/lib";
 
 const Main = styled.main`
   background: ${colors.gray[9]};
-  min-height: calc(100vh - 15rem);
+  min-height: calc(100vh - 12rem);
+  @media (max-width: ${breakpoints.medium}) {
+    min-height: calc(100vh - 9rem);
+  }
 `;
 
 const PageTemplate = ({ children }) => {
