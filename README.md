@@ -25,4 +25,4 @@
 
 ## PostDetail
 
-사이즈 조절해야함
+1.21 : Delete Footer

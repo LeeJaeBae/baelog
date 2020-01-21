@@ -54,7 +54,7 @@ const Tag = styled.a`
 const PostItem = () => {
   return (
     <Item>
-      <Title>Title</Title>
+      <Title to="/post/123">Title</Title>
       <Date>mm-dd-yyyy</Date>
       <Text>내요오오오옹</Text>
       <Tag>#Tag</Tag>

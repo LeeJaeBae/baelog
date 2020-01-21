@@ -104,5 +104,5 @@ const Button = ({ children, to, onClick, disabled, theme = "default" }) => {
 Button.propTypes = {
   theme: PropTypes.string
 };
-console.log(Button);
+
 export default Button;

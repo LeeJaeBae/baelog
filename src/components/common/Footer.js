@@ -44,7 +44,6 @@ const Login = styled.div`
 `;
 
 const Footer = () => {
-  console.log(window);
   return (
     <Container>
       <Brand to="/">{logoText}</Brand>

@@ -10,8 +10,8 @@ const mixins = ({ depth = 1, strength = 1, color = "0,0,0" }) => {
       return `box-shadow: 0 10px 20px rgba(${color}, ${strength * 0.19}),
                0 6px 6px rgba(${color}, ${strength * 0.23})`;
     case 4:
-      return `box-shadow: 0 15px 30px rgba(${color}, ${strength * 0.25}),
-               0 10px 10px rgba(${color}, ${strength * 0.22});`;
+      return ` 0 15px 30px rgba('${color}', '${strength * 0.25}'),
+               0 10px 10px rgba('${color}', '${strength * 0.22}');`;
     case 5:
       return `box-shadow: 0 20px 40px rgba(${color}, ${strength * 0.3}),
               0 15px 12px rgba(${color}, ${strength * 0.22})`;

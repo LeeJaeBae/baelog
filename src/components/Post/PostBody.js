@@ -1,0 +1,25 @@
+import React from "react";
+import styled from "styled-components";
+
+const PostBody = styled.div``;
+
+const Paper = styled.div`
+  padding: 2rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  background: whitesmoke;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.11), 0 10px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3rem);
+  margin: 0 auto;
+  min-height: 20rem;
+`;
+
+const Body = () => {
+  return (
+    <PostBody>
+      <Paper>내요오오ㅗ오오오오옹</Paper>
+    </PostBody>
+  );
+};
+
+export default Body;

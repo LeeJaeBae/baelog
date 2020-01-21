@@ -11,6 +11,9 @@ import { logoText } from "../../styles/GlobalStyles";
 const Head = styled.header`
   background-color: ${headColor};
   user-select: none;
+  @media (max-width: ${breakpoints.medium}) {
+    padding-top: 0;
+  }
 `;
 
 const Content = styled(Head)`
@@ -29,7 +32,7 @@ const Content = styled(Head)`
   }
   @media (max-width: ${breakpoints.medium}) {
     width: 100%;
-    height: 5rem;
+    height: 8rem;
     display: block;
     text-align: center;
   }
@@ -45,6 +48,9 @@ const Brand = styled.div`
   /* font-family: 'Nanum Gothic', sans-serif; */
   font-size: 3rem;
   font-weight: 600;
+  @media (max-width: ${breakpoints.medium}) {
+    font-size: 2rem;
+  }
 `;
 
 const Right = styled.div`
@@ -60,7 +66,7 @@ const Header = () => {
   return (
     <>
       <Head>
-        <Content as="div">
+        <Content>
           <Brand>
             <Link to="/">{logoText}</Link>
           </Brand>
