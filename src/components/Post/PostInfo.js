@@ -29,8 +29,8 @@ const Title = styled.div`
 
 const Tag = styled.a`
   margin-top: 1rem;
-  font-size: 1.25rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 100;
   &:hover {
     text-decoration: underline;
   }

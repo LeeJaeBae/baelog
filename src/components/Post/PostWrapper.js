@@ -11,15 +11,14 @@ const PostWrapper = styled.div`
   margin: 0 auto;
 
   padding-top: 3rem;
-  padding-bottom: 3rem;
   padding-left: 1rem;
   padding-right: 1rem;
 
   @media (max-width: ${breakpoints.wide}) {
-    width: 768px;
+    width: 1024px;
   }
   @media (max-width: ${breakpoints.large}) {
-    width: 512px;
+    width: 790px;
   }
   @media (max-width: ${breakpoints.medium}) {
     width: 100%;

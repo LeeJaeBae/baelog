@@ -1,7 +1,9 @@
 import React from "react";
 
+import EditorTemplate from "components/EditorTemplate/EditorTemplate";
+
 const EditorPage = () => {
-  return <div>Editor</div>;
+  return <EditorTemplate />;
 };
 
 export default EditorPage;
