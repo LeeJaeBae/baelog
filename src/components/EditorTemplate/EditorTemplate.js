@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import EditorHeader from "./EditorHeader";
-import EditorPane from "./EditorPane";
+import EditorPaneContainer from "./EditorPane/EditorPaneContainer";
 import PreviewPane from "./PreviewPane";
 
 import { breakpoints } from "styles/lib";
@@ -74,7 +74,7 @@ class EditorTemplate extends React.Component {
         <EditorHeader />
         <Panes>
           <Pane left={leftPrecerntage} className="editor">
-            <EditorPane />
+            <EditorPaneContainer />
           </Pane>
           <Pane left={leftPrecerntage} className="preview">
             <PreviewPane />
