@@ -3,10 +3,10 @@ import styled from "styled-components";
 
 import EditorHeader from "./EditorHeader";
 import EditorPaneContainer from "./EditorPane/EditorPaneContainer";
-import PreviewPane from "./PreviewPane";
+import PreviewPaneContainer from "./PreviewPane/PreviewPaneContainer";
 
 import { breakpoints } from "styles/lib";
-
+import { bodyColor } from "styles/GlobalStyles";
 const Container = styled.div`
   @media (max-width: ${breakpoints.medium}) {
     .editor {
@@ -22,7 +22,7 @@ const Container = styled.div`
 const Panes = styled.div`
   height: calc(100vh - 7rem);
   display: flex;
-  background: gray;
+  background: ${bodyColor};
 `;
 
 const Pane = styled.div`
@@ -77,7 +77,7 @@ class EditorTemplate extends React.Component {
             <EditorPaneContainer />
           </Pane>
           <Pane left={leftPrecerntage} className="preview">
-            <PreviewPane />
+            <PreviewPaneContainer />
           </Pane>
           <Separator
             left={leftPrecerntage}

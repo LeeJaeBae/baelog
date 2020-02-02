@@ -2,11 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import { colors } from "styles/lib";
 
+import MarkdownRender from "components/common/MarkdownRender";
+
 const Container = styled.div`
   flex: 1;
   padding: 2rem;
   overflow-y: auto;
   font-size: 1.125rem;
+  display: flex;
+  flex-direction: column;
 `;
 
 const Title = styled.h1`
@@ -22,8 +26,10 @@ const TextBox = styled.div``;
 const PreviewPane = ({ markdown, title }) => {
   return (
     <Container>
-      <Title className="title">Title</Title>
-      <TextBox>Test</TextBox>
+      <Title className="title">{title}</Title>
+      <TextBox>
+        <MarkdownRender markdown={markdown} />
+      </TextBox>
     </Container>
   );
 };

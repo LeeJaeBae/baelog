@@ -38,6 +38,9 @@ const globalStyles = createGlobalStyle`
         color: ${colors.black};
         background-color: ${bodyColor};
     }
+    h1{
+
+    }
 `;
 
 export default globalStyles;

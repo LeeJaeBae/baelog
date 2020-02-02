@@ -74,11 +74,6 @@ const Header = () => {
             <Button theme="outline" to="/editor">
               New Post
             </Button>
-            <Button theme="disabled" disabled={true}>
-              test
-            </Button>
-            <Button theme="default">test2</Button>
-            <Button theme="gray">test3</Button>
           </Right>
         </Content>
       </Head>
