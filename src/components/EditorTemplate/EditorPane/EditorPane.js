@@ -117,7 +117,6 @@ export default class EditorPane extends React.Component {
       codeMirror.setCursor(cursor);
     }
   }
-
   render() {
     const { tags, title } = this.props;
     const { handleChange } = this;

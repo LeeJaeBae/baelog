@@ -76,14 +76,14 @@ class EditorTemplate extends React.Component {
           <Pane left={leftPrecerntage} className="editor">
             <EditorPaneContainer />
           </Pane>
-          <Pane left={leftPrecerntage} className="preview">
-            <PreviewPaneContainer />
-          </Pane>
           <Separator
             left={leftPrecerntage}
             onMouseDown={handleSeparatorMouseDown}
             className="separator"
           />
+          <Pane left={leftPrecerntage} className="preview">
+            <PreviewPaneContainer />
+          </Pane>
         </Panes>
       </Container>
     );

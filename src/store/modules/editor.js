@@ -1,7 +1,7 @@
 import { createAction, handleActions } from "redux-actions";
 // createAction
 import { Map } from "immutable";
-import { pender } from "redux-pender";
+// import { pender } from "redux-pender";
 
 // action types
 
