@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import EditorHeader from "./EditorHeader";
+import EditorHeaderContainer from "./EditorHeader/EditorHeaderContainer";
 import EditorPaneContainer from "./EditorPane/EditorPaneContainer";
 import PreviewPaneContainer from "./PreviewPane/PreviewPaneContainer";
 
@@ -71,7 +71,7 @@ class EditorTemplate extends React.Component {
 
     return (
       <Container>
-        <EditorHeader />
+        <EditorHeaderContainer />
         <Panes>
           <Pane left={leftPrecerntage} className="editor">
             <EditorPaneContainer />

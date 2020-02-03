@@ -26,3 +26,7 @@
 ## PostDetail
 
 1.21 : Delete Footer
+
+## SeverSide
+
+    > install axios

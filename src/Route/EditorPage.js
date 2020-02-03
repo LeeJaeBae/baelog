@@ -3,7 +3,11 @@ import React from "react";
 import EditorTemplate from "components/EditorTemplate/EditorTemplate";
 
 const EditorPage = () => {
-  return <EditorTemplate />;
+  return (
+    <>
+      <EditorTemplate />;
+    </>
+  );
 };
 
 export default EditorPage;
