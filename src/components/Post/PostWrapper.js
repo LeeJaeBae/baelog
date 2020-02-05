@@ -3,10 +3,7 @@ import styled from "styled-components";
 
 import { breakpoints } from "styles/lib";
 
-import Body from "./PostBody";
-import Info from "./PostInfo";
-
-const PostWrapper = styled.div`
+const Wrapper = styled.div`
   width: 1024px;
   margin: 0 auto;
 
@@ -25,13 +22,8 @@ const PostWrapper = styled.div`
   }
 `;
 
-const Post = () => {
-  return (
-    <PostWrapper>
-      <Info />
-      <Body />
-    </PostWrapper>
-  );
+const PostWrapper = () => {
+  return <Wrapper />;
 };
 
-export default Post;
+export default PostWrapper;

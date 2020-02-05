@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import PostInfo from "components/Post/PostInfo";
 import PostBody from "components/Post/PostBody";
+import PostWrapper from "components/Post/PostWrapper";
 import * as postActions from "store/modules/post";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
@@ -22,10 +23,10 @@ class Post extends Component {
     if (loading) return null;
     const { title, body, publishedDate, tags } = post.toJS();
     return (
-      <div>
+      <PostWrapper>
         <PostInfo title={title} publishedDate={publishedDate} tags={tags} />
         <PostBody body={body} />
-      </div>
+      </PostWrapper>
     );
   }
 }

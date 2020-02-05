@@ -1,12 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 
+import { Link } from "react-router-dom";
+import moment from "moment";
+
 import { headColor } from "styles/GlobalStyles";
 import { breakpoints } from "styles/lib";
 
 const Wrapper = styled.div``;
 
-const PostInfo = styled.div`
+const Info = styled.div`
   background-color: ${headColor};
   min-height: 15rem;
   align-items: center;
@@ -52,16 +55,21 @@ const Date = styled.div`
   }
 `;
 
-const Info = () => (
-  <PostInfo>
+const PostInfo = ({ publishedDate, title, tags }) => (
+  <Info>
     <Wrapper>
-      <Title>Title</Title>
-      <Tag>Tag</Tag>
-      <Tag>Tag</Tag>
-      <Tag>Tag</Tag>
-      <Date>mm-dd-yyyy</Date>
+      <Title>{title}</Title>
+      <>
+        {tags &&
+          tags.map(tag => (
+            <Link key={tag} to={`/tag/${tag}`}>
+              <Tag>#{tag}</Tag>
+            </Link>
+          ))}
+      </>
+      <Date>{moment(publishedDate).format("ll")}</Date>
     </Wrapper>
-  </PostInfo>
+  </Info>
 );
 
-export default Info;
+export default PostInfo;

@@ -13,7 +13,8 @@ class EditorHeaderContainer extends Component {
     console.log(this.props);
   }
   handleGoBack = () => {
-    const { history } = this.props;
+    const { history, EditorActions } = this.props;
+    EditorActions.initialize();
     history.goBack();
   };
   handleSubmit = async () => {

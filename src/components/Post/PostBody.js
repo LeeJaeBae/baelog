@@ -1,7 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-const PostBody = styled.div``;
+import MarkdownRender from "components/common/MarkdownRender";
+
+const Body = styled.div``;
 
 const Paper = styled.div`
   padding: 2rem;
@@ -26,12 +28,14 @@ const Paper = styled.div`
   }
 `;
 
-const Body = () => {
+const PostBody = ({ body }) => {
   return (
-    <PostBody>
-      <Paper>text</Paper>
-    </PostBody>
+    <Body>
+      <Paper>
+        <MarkdownRender markdown={body} />
+      </Paper>
+    </Body>
   );
 };
 
-export default Body;
+export default PostBody;
